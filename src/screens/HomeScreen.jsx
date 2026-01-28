@@ -10,11 +10,17 @@ const HomeScreen = () => {
   ]
 
   return (
-    <section>
+    <section
+      className="py-5 px-3 px-md-4 px-lg-5 rounded-4 bg-body-tertiary"
+      style={{
+        backgroundImage:
+          "radial-gradient(circle at 0% 0%, rgba(13,110,253,0.08), transparent 55%), radial-gradient(circle at 100% 100%, rgba(32,201,151,0.08), transparent 55%)",
+      }}
+    >
       <Row className="align-items-center g-5">
         <Col xs={12} lg={7}>
           <p className="fw-semibold text-primary mb-2 tracking-wide">
-            WELCOME
+            Welcome to my portfolio!
           </p>
           <h1 className="display-4 fw-bold mb-3">
             Hi, I&apos;m

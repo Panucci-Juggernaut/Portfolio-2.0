@@ -1,5 +1,6 @@
 import { Row, Col, Button, Image } from "react-bootstrap"
 import { Link } from "react-router-dom"
+import CTAGroup from "../components/CTAGroup"
 
 const HomeScreen = () => {
 
@@ -11,11 +12,7 @@ const HomeScreen = () => {
 
   return (
     <section
-      className="py-5 px-3 px-md-4 px-lg-5 rounded-4 bg-body-tertiary"
-      style={{
-        backgroundImage:
-          "radial-gradient(circle at 0% 0%, rgba(13,110,253,0.08), transparent 55%), radial-gradient(circle at 100% 100%, rgba(32,201,151,0.08), transparent 55%)",
-      }}
+      className="py-5 px-3 px-md-4 px-lg-5 rounded-4 bg-body-tertiary home-background"
     >
       <Row className="align-items-center g-5">
         <Col xs={12} lg={7}>
@@ -32,13 +29,12 @@ const HomeScreen = () => {
             Explore my work, skills, and the projects I&apos;m most proud of.
           </p>
 
-          <div className="d-flex flex-wrap gap-3 mb-4">
+          <CTAGroup>
             <Button
               as={Link}
               to="/projects"
               variant="primary"
               size="lg"
-              className="px-4 shadow-sm"
             >
               View Projects
             </Button>
@@ -47,11 +43,10 @@ const HomeScreen = () => {
               to="/contact"
               variant="outline-secondary"
               size="lg"
-              className="px-4"
             >
               Contact Me
             </Button>
-          </div>
+          </CTAGroup>
           <div className="d-flex flex-wrap gap-4">
             {summary.map((item, index) => (
               <div key={index}>
@@ -64,10 +59,9 @@ const HomeScreen = () => {
         <Col xs={12} lg={5} className="d-flex justify-content-center">
           <Image
             src={'./images/olawale.jpg'}
-            alt="Olawale"
+            alt="Olawale jpg"
             roundedCircle
-            className="shadow-lg"
-            style={{ width: "220px", height: "220px", objectFit: "cover" }}
+            className="shadow-lg home-img"
           />
         </Col>
       </Row>

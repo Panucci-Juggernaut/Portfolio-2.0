@@ -1,14 +1,9 @@
 import { Row, Col, Button, Image } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import CTAGroup from "../components/CTAGroup"
+import TypeWriter from "../components/Typewriter"
 
 const HomeScreen = () => {
-
-  const summary =[
-    { title: "5+ years", subtitle: "Experience" },
-    { title: "15+ projects", subtitle: "Delivered" },
-    { title: "Always", subtitle: "Learning & Building" }
-  ]
 
   return (
     <section
@@ -47,14 +42,7 @@ const HomeScreen = () => {
               Contact Me
             </Button>
           </CTAGroup>
-          <div className="d-flex flex-wrap gap-4">
-            {summary.map((item, index) => (
-              <div key={index}>
-                <div className="h5 mb-0">{item.title}</div>
-                <small className="text-muted">{item.subtitle}</small>
-              </div>
-            ))}
-          </div>
+          <TypeWriter />
         </Col>
         <Col xs={12} lg={5} className="d-flex justify-content-center">
           <Image

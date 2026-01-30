@@ -5,13 +5,17 @@ import './assets/styles/index.css'
 import App from './App.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen.jsx';
-import About from './screens/About.jsx';
+import AboutScreen from './screens/AboutScreen.jsx';
+import ProjectsScreen from './screens/ProjectsScreen.jsx';
+import ContactScreen from './screens/ContactScreen.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />} >
       <Route index={true} path = '/' element={<HomeScreen />}/>
-      <Route path='/about' element={<About />}/>
+      <Route path='/about' element={<AboutScreen />}/>
+      <Route path='/projects' element={<ProjectsScreen />}/>
+      <Route path='/contact' element={<ContactScreen />}/>
     </Route>
 
   )

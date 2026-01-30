@@ -32,7 +32,7 @@ import {
 } from "react-icons/si";
 
 
-const About = () => {
+const AboutScreen = () => {
 
     const highlights = [
     {
@@ -224,4 +224,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AboutScreen

@@ -153,7 +153,7 @@ const AboutScreen = () => {
         <Col xs={12} lg={5} className="d-flex justify-content-center">
           <div className="text-center">
             <Image
-              src={"./images/olawale.jpg"}
+              src={"./images/avatar.jpg"}
               alt="Olawale portrait"
               roundedCircle
               className="shadow-lg home-img"

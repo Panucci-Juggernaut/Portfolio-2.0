@@ -162,20 +162,7 @@ const ContactScreen = () => {
         <Col xs={12} lg={7}>
           <Card className="shadow-sm">
             <Card.Body className="p-4 p-md-5">
-              {showSuccess && (
-                <Alert variant="success" className="d-flex align-items-center mb-3">
-                  <FaCheckCircle className="me-2" />
-                  <div>
-                    <strong>Message sent!</strong> I&apos;ll get back to you soon.
-                  </div>
-                </Alert>
-              )}
-
-              {submitError && (
-                <Alert variant="danger" className="mb-3">
-                  <strong>Error:</strong> {submitError}
-                </Alert>
-              )}
+              
 
               <Form onSubmit={handleSubmit}>
                 <Row className="g-3">
@@ -293,6 +280,20 @@ const ContactScreen = () => {
                   </Col>
                 </Row>
               </Form>
+              {showSuccess && (
+                <Alert variant="success" className="d-flex align-items-center mb-3">
+                  <FaCheckCircle className="me-2" />
+                  <div>
+                    <strong>Message sent!</strong> I&apos;ll get back to you soon.
+                  </div>
+                </Alert>
+              )}
+
+              {submitError && (
+                <Alert variant="danger" className="mb-3">
+                  <strong>Error:</strong> {submitError}
+                </Alert>
+              )}
             </Card.Body>
           </Card>
         </Col>

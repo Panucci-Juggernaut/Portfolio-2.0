@@ -164,7 +164,7 @@ const ContactScreen = () => {
             <Card.Body className="p-4 p-md-5">
               
 
-              <Form onSubmit={handleSubmit}>
+              <Form onSubmit={handleSubmit} className="mb-3">
                 <Row className="g-3">
                   <Col xs={12}>
                     <Form.Group>
